@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+body { 
+    background-image:url('assets/donuts.png') !important;
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.hand-write {
+    font-family: "Brush Script MT", cursive;
+    font-size: 25px;
+    color: chocolate
+}
