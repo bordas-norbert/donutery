@@ -1,26 +1,11 @@
+
 <div class="d-flex flex-row bd-highlight mb-3">
-<!--
-    <div class="p-2 bd-highlight">
-        <img class = "image img-fluid mw-25" src="assets/item_1.png">
-    </div>
-
-    <div class="p-2 bd-highlight">
-        <img class ="image img-fluid mw-25" src="assets/item_2.jpg">
-    </div>    
-
-    <div class="p-2 bd-highlight">
-        <img class ="image img-fluid mw-25" src="assets/item_3.png">
-    </div>
-
-    <div class="p-2 bd-highlight">
-        <img class ="image img-fluid mw-25" src="assets/item_4.jpg">
-    </div>
-</div>-->
-    <div class="card" style="width: 16rem; margin:5px;">
-        <img src="assets/item_1.png" class="card-img-top" alt="">
+    <div *ngFor="let item of cardItems"
+    class="card" style="width: 16rem; margin:5px;">
+        <img src="assets/item_{{item.id}}.png" class="card-img-top" alt="">
         <div class="card-body bg-1">
-            <h5 class="card-title">Chocolate glazed donut</h5>
-            <p class="card-text">If you want diabetes...</p>
+            <h5 class="card-title data-toggle" title={{item.toolTip}}>{{item.title}}</h5>
+            <p class="card-text">{{item.description}}</p>
         
                 <div class="d-flex p-2 bd-highlight">
                     <a href="#" class="btn btn-primary" style="width:5rem;">Add to cart</a>
@@ -29,16 +14,4 @@
         </div>
     </div>
 
-    <div class="card" style="width: 16rem; margin:5px;">
-        <img src="assets/item_2.jpg" class="card-img-top" alt="">
-        <div class="card-body bg-1">
-            <h5 class="card-title data-toggle" title="Salted caramel glazed donut">Salted caramel glaze...</h5>
-            <p class="card-text">Eat me</p>
-        
-                <div class="d-flex p-2 bd-highlight">
-                    <a href="#" class="btn btn-primary" style="width:5rem;">Add to cart</a>
-                    <input type="text" placeholder = "Cate bucati" style="width:6rem;"> 
-                </div>
-        </div>
-    </div>
 </div>
