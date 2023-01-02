@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HomeService } from '../home.service';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  carouselItems;
 
+  constructor(service: HomeService){
+    this.carouselItems = service.getCarouselElements();
+  }
 }

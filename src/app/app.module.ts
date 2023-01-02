@@ -7,6 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { SignupComponent } from './signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
+import { ProductsService } from './products.service';
+import { FormsModule } from '@angular/forms'
+import { HomeService } from './home.service';
 
 @NgModule({
   declarations: [
@@ -17,10 +20,14 @@ import { ProductsComponent } from './products/products.component';
     ProductsComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    ProductsService,
+    HomeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

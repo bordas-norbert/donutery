@@ -1,6 +1,12 @@
-.img-cook {
-    max-width: 500px;
-    max-height: 500px;
+@media (max-width: 100%)
+{
+    .img-cook {
+        max-width: 500px;
+        max-height: 500px;
+    }
 }
-
-
+.hand-write2 {
+    font-family: "Brush Script MT", cursive;
+    font-size: 50px;
+    color: chocolate
+}
