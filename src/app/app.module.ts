@@ -10,6 +10,8 @@ import { ProductsComponent } from './products/products.component';
 import { ProductsService } from './products.service';
 import { FormsModule } from '@angular/forms'
 import { HomeService } from './home.service';
+import { ContactComponent } from './contact/contact.component';
+import { InputFormatDirective } from './input-format.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { HomeService } from './home.service';
     HeaderComponent,
     SignupComponent,
     HomeComponent,
-    ProductsComponent
+    ProductsComponent,
+    ContactComponent,
+    InputFormatDirective
   ],
   imports: [
     FormsModule,

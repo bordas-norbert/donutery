@@ -1,6 +1,4 @@
 <div class="container">
-
-
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -8,9 +6,9 @@
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
-      <div *ngFor="let carousel_picture of carouselItems"
-        class="carousel-item active">
-        <img src="assets/carousel_{{ carousel_picture.id }}.png" class="d-block w-100 " alt="...">
+      <div *ngFor="let carousel_picture of carouselItems; let i = index"
+        class="carousel-item" [class.active]="i==1">
+        <img src="assets/carousel_{{ carousel_picture.id }}.png" alt="...">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
