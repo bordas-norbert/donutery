@@ -1,0 +1,19 @@
+.form-control{
+    background-color:rgb(230,199,153);
+}
+
+.hand-write2 {
+    font-family: "Brush Script MT", cursive;
+    font-size: 25px;
+    color: rgb(225, 230, 226);
+}
+
+.div-color{
+    background-color: rgb(77,9,6);
+    padding: 4px;
+    padding-bottom: 5px;
+}
+
+.form-control.ng-touched.ng-invalid{
+    border:2px solid red;
+}
